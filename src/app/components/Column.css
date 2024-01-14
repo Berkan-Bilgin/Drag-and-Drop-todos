@@ -1,0 +1,30 @@
+.column {
+  background: var(--color-gray-dark);
+  min-height: 20rem;
+  color: #fff;
+
+  width: 33%;
+  max-width: 20rem;
+  margin: 0 0.5rem;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.titleWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.titleWrapper button {
+  color: black;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  height: fit-content;
+}
+
+.titleWrapper button:hover {
+  background-color: var(--color-gray-light);
+}
