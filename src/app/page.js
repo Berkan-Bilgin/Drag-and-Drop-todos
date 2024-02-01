@@ -6,12 +6,12 @@ import { useStore } from "@/store/taskStore";
 
 export default function Home() {
   const tasks = useStore((state) => state.tasks);
-  const [isClient, setIsClient] = useState(true);
+  const [isClient, setIsClient] = useState(false);
 
-  // useEffect(() => {
-  //   // Bu kod bloğu yalnızca istemci tarafında çalışacak
-  //   setIsClient(true);
-  // }, []);
+  useEffect(() => {
+    // Bu kod bloğu yalnızca istemci tarafında çalışacak
+    setIsClient(true);
+  }, []);
   return (
     <>
       {isClient && (
