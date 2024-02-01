@@ -31,7 +31,6 @@ const Column = ({ state }) => {
     >
       <div className="titleWrapper">
         <p>{state}</p>
-        <h1>dragged task: {draggedTask} </h1>
 
         <button onClick={() => setOpen(!open)}>Add</button>
       </div>
